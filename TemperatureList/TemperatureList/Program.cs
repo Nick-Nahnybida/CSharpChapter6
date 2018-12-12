@@ -15,15 +15,16 @@ namespace TemperatureList
             int i;
             int j;
             int[] temperature = new int[7];
-
+            int total = 0;
             WriteLine("Input the temperatures for the next 7 days");
-            for (i = 0; i < 7; i++)
+            for (i = 0; i < temperature.Length; i++)
             {
                 j = i + 1;
                 Write("Enter temperature " + j + " <<< ");
                 temperature[i] = Convert.ToInt32(ReadLine());
+                total = temperature[i] + total;
             }
-            average = (temperature[0] + temperature[1] + temperature[2] + temperature[3] + temperature[4] + temperature[5] + temperature[6]) / 7;
+            average = total/ temperature.Length;
             for (i = 0; i < 7; i++)
             {
                 j = i + 1;
