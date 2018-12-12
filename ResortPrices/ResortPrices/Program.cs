@@ -29,9 +29,8 @@ namespace ResortPrices
             }
 
             total = days * nightPrice;
-
-            WriteLine("You plan on staying {0} nights", days);
-            WriteLine("Your total will be "+ total.ToString("C") + " at " + nightPrice.ToString("C") + " a night");
+            
+            WriteLine("Your total will be "+ total.ToString("C") + " at " + nightPrice.ToString("C") + " a night for " + days + " nights.");
 
 
 
